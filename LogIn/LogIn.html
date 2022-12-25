@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>LogIn</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="LogIn.css" />
+</head>
+<body>
+    <main>
+        <form id="register">
+            <label>
+                <span>Username</span>
+                <img src="./icons/user.svg" alt="user-pic" />
+                <input type="text" pattern="[A-Za-z0-9]{3,32}" />
+            </label>
+            <label>
+                <span>Email</span>
+                <img src="icons/email.svg" alt="email-pic" />
+                <input type="email" name="Emial" id="Email" />
+            </label>
+            <label>
+                <span>Phone</span>
+                <img src="./icons/phone.svg" alt="phone-pic" />
+                <input type="tel" pattern="\+989+[0-9]{9}|09+[0-9]{9}|00989+[0-9]{9}" name="telephone" id="telephone" />
+            </label>
+            <label>
+                <span>Password</span>
+                <img src="./icons/password.svg" alt="password-pic" />
+                <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,32}"
+                    title="Password length must be 8 character at least" name="password" id="password" />
+            </label>
+            <button type="submit">Register</button>
+            <p>
+                Already have an account?
+                <a href="#">Login</a>
+            </p>
+        </form>
+        <section>
+            <img src="work.svg" alt="work-icon" />
+        </section>
+        <form id="login">
+            <label>
+                <span>Username</span>
+                <img src="./icons/user.svg" alt="user-pic" />
+                <input type="text" pattern="[A-Za-z0-9]{3,32}" name="username" id="username" />
+            </label>
+            <label>
+                <span>Password</span>
+                <img src="./icons/password.svg" alt="password pic" />
+                <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,32}" name="password"
+                    id="password2" />
+            </label>
+            <button type="submit">Login</button>
+            <p>
+                Don't have an account?
+                <a href="#">Register</a>
+            </p>
+        </form>
+    </main>
+    <script src="LogIn.js"></script>
+</body>
+</html>
